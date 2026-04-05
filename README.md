@@ -10,17 +10,23 @@ This repository contains the finalized KiCad design files for a professional USB
 
 ### 1. 3D Model Tasarımı / 3D Model Design
 ![3D Render](USB-to-TTL_3d.png)
+
 *USB-C arayüzü ve CH340G köprüsü ile kompakt ve fiziksel olarak optimize edilmiş nihai tasarım.*
+
 *The final physical layout featuring a compact USB-C interface and the CH340G bridge.*
 
 ### 2. Devre Şeması / Schematic Diagram
 ![Schematic View](USB-to-TTL_sch.png)
+
 *Kristal osilatör devresi ve gürültü engelleyici kapasitör katmanlarını içeren hassas elektriksel tasarım.*
+
 *Precise electrical design including the crystal oscillator circuit and decoupling capacitors.*
 
 ### 3. PCB Yolları ve Yerleşim / PCB Layout & Routing
 ![PCB Layout](USB-to-TTL_pcb.png)
+
 *Sinyal bütünlüğü için optimize edilmiş bakır yollar ve geniş yer düzlemi (ground plane) uygulaması.*
+
 *The finalized copper layers with optimized routing and a solid ground plane for signal integrity.*
 
 ---
