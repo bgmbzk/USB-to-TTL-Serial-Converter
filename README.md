@@ -1,39 +1,42 @@
-# USB-to-TTL Serial UART Converter (Experimental Layout)
+# ⚡ USB-to-TTL Serial UART Converter (Finalized / Tamamlandı)
 
-This repository contains the KiCad design files for a USB-to-TTL converter based on the **CH340G** IC and a **USB-C** connector. 
+Bu depo, **CH340G** entegresi ve modern **USB-C** konnektörü temel alınarak tasarlanmış, tam donanımlı bir USB-to-TTL dönüştürücü projesini içerir.
 
-## ⚠️ Project Status: On Hold / Experimental
-This project is an architectural study rather than a finished, production-ready PCB. Development has been paused at the routing stage for the following technical reasons:
+This repository contains the finalized KiCad design files for a professional USB-to-TTL converter based on the **CH340G** IC and a modern **USB-C** connector.
 
-- **Routing Constraints:** The 16-pin USB-C connector features an extremely tight pin pitch. Standard design rules (clearance) in KiCad caused routing conflicts in the breakout area.
-- **Design Study:** The project successfully demonstrates schematic capture, footprint assignment, component placement optimization, and ground plane (copper pour) application.
+---
 
+## 📸 Proje Görselleri / Project Visuals
 
-## 🖼️ Project Visuals
-
-### 1. Schematic Design
-The electrical connections and component logic are defined in the schematic below:
-
-![Schematic View](USB-to-TTL_sch.png)
-
-### 2. 3D Render
-The physical layout and component placement on the PCB:
-
+### 1. 3D Model Tasarımı / 3D Model Design
 ![3D Render](USB-to-TTL_3d.png)
+*USB-C arayüzü ve CH340G köprüsü ile kompakt ve fiziksel olarak optimize edilmiş nihai tasarım.*
+*The final physical layout featuring a compact USB-C interface and the CH340G bridge.*
 
-### 3. PCB Layout (Work in Progress)
-The current state of the copper layers and ground plane:
+### 2. Devre Şeması / Schematic Diagram
+![Schematic View](USB-to-TTL_sch.png)
+*Kristal osilatör devresi ve gürültü engelleyici kapasitör katmanlarını içeren hassas elektriksel tasarım.*
+*Precise electrical design including the crystal oscillator circuit and decoupling capacitors.*
 
+### 3. PCB Yolları ve Yerleşim / PCB Layout & Routing
 ![PCB Layout](USB-to-TTL_pcb.png)
+*Sinyal bütünlüğü için optimize edilmiş bakır yollar ve geniş yer düzlemi (ground plane) uygulaması.*
+*The finalized copper layers with optimized routing and a solid ground plane for signal integrity.*
 
-## 🛠️ Technical Specifications
-- **Main IC:** CH340G (USB-to-Serial)
-- **Connector:** USB Type-C (16-pin Surface Mount)
+---
+
+## 🛠️ Teknik Detaylar / Technical Details
+- **Main IC:** CH340G (Güvenilir USB-Seri dönüştürücü / Reliable USB-to-Serial bridge)
+- **Connector:** USB Type-C (16-pin SMT)
 - **Software:** KiCad 8.0
-- **Features:** Integrated crystal oscillator circuit, decoupling capacitors, and designated UART breakout pins.
+- **Özellikler / Features:** - Optimize edilmiş 12MHz kristal osilatör devresi. / Optimized 12MHz crystal circuit.
+    - Profesyonel güç filtreleme kapasitörleri. / Professional-grade power filtering.
+    - Kolay prototipleme için net UART çıkış pinleri. / Clear UART breakout pins.
 
-## 📝 Learning Outcomes
-This experiment provided hands-on experience with:
-1. High-density connector footprints.
-2. Managing ground planes in a mixed-signal environment.
-3. Troubleshooting Design Rule Check (DRC) violations in tight spaces.
+## 📈 Öğrenim Kazanımları / Learning Outcomes
+* **Kısıtlamaları Aşmak:** Dar alanlardaki (USB-C) Tasarım Kuralı Hatalarını (DRC) başarıyla çözme yetisi. / Successfully solved DRC violations in tight spaces.
+* **Yüksek Yoğunluklu Tasarım:** Sıkışık pin aralıklarında yol yönetimi deneyimi. / Gained experience in high-density trace management.
+* **Süreklilik:** Yarım kalan bir projeyi teknik olarak geliştirip üretim aşamasına getirme disiplini. / Demonstrated the ability to push a "stuck" project to completion.
+
+---
+*Developed with persistence, curiosity, and a passion for hardware engineering.*
